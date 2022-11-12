@@ -1,0 +1,108 @@
+.fdc {
+  flex-direction: column;
+}
+.acfs {
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.videoPage {
+  width: 100%;
+  min-height: calc(100vh - 60px);
+  background-color: rgb(28, 28, 28);
+}
+.playerDiv {
+  flex: 6;
+  height: 100%;
+}
+.videoRight {
+  flex: 4;
+  width: 100%;
+  height: 100%;
+}
+.videoRecommendation {
+  margin-top: 10px;
+  color: white;
+  width: 380px;
+  text-align: left;
+}
+.videoThumbnailImg {
+  width: 200px;
+  height: 120px;
+  border-radius: 20px;
+}
+.videoTitle {
+  font-size: 15px;
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.videoDetails {
+  text-align: left;
+  align-items: flex-start;
+  padding-left: 5px;
+}
+.videoDetail {
+  margin-top: 5px;
+  font-size: 13px;
+  color: rgb(174, 174, 174);
+  font-family: "Raleway", sans-serif;
+}
+.ytvideo {
+  width: 700px;
+  height: 395px;
+  padding-left: 50px;
+}
+@media (max-width: 1200px) {
+  .ytvideo {
+    width: 600px;
+    height: 350px;
+  }
+}
+@media (max-width: 1150px) {
+  .ytvideo {
+    width: 500px;
+    height: 285px;
+  }
+}
+@media (max-width: 1000px) {
+  .videoPage {
+    flex-direction: column;
+  }
+  .ytvideo {
+    width: 80vw;
+    height: 400px;
+    padding-left: 0px;
+    padding-top: 50px;
+  }
+  .videoRecommendation {
+    width: 80vw;
+    margin-top: 50px;
+  }
+}
+@media (max-width: 700px) {
+  .ytvideo {
+    width: 90vw;
+    height: 300px;
+  }
+}
+@media (max-width: 600px) {
+  .videoRecommendation {
+    width: 90vw;
+    margin-top: 50px;
+  }
+  .videoThumbnailImg {
+    width: 180px;
+    height: 100px;
+  }
+}
+@media (max-width: 450px) {
+  .ytvideo {
+    width: 95vw;
+    height: 250px;
+  }
+}

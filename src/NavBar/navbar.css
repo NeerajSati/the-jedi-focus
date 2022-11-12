@@ -1,0 +1,107 @@
+.df {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.navbar {
+  width: 100%;
+  background-color: #131313;
+  height: 60px;
+  font-size: 22px;
+  color: white;
+  z-index: 1;
+}
+.navbarLogo {
+  font-size: 34px;
+  color: rgb(255, 20, 20);
+  padding-top: 2px;
+  padding-right: 5px;
+  cursor: pointer;
+}
+.navbarLogoText {
+  font-size: 20px;
+  letter-spacing: 0px;
+  font-family: "Raleway", sans-serif;
+  cursor: pointer;
+}
+.navbarLeft {
+  flex: 2;
+}
+.searchDiv {
+  flex: 6;
+}
+.navbarLeft {
+  justify-content: left;
+}
+.navbarHam {
+  width: 25%;
+}
+.navbarRight {
+  flex: 2;
+  justify-content: flex-end;
+}
+.navbarIcons {
+  margin: 0px 20px 0px 10px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+.searchBar {
+  width: 60%;
+  height: 25px;
+  margin-left: 50px;
+  padding: 5px;
+  padding-left: 20px;
+  font-size: 16px;
+  border-radius: 40px 0px 0px 40px;
+  outline: transparent;
+  border: none;
+  background-color: transparent;
+  border: 1px solid rgb(62, 62, 62);
+  color: white;
+}
+.searchBar:active,
+.searchBar:focus {
+  border: 1px solid rgb(0, 108, 224);
+}
+.searchIconDiv {
+  width: 60px;
+  height: 25px;
+  background-color: rgb(62, 62, 62);
+  padding: 5px;
+  border-radius: 0px 40px 40px 0px;
+  cursor: pointer;
+}
+.searchMic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgb(62, 62, 62);
+}
+@media (max-width: 850px) {
+  .navbarHam {
+    display: none;
+  }
+  .navbarIcons {
+    margin-left: 0;
+    margin-right: 10px;
+  }
+  .searchMic {
+    margin-left: 10px;
+  }
+  .navbarBanner {
+    margin-left: 10px;
+  }
+}
+@media (max-width: 700px) {
+  .searchBar {
+    margin-left: 20px;
+  }
+}
+@media (max-width: 550px) {
+  .searchDiv {
+    display: none;
+  }
+}

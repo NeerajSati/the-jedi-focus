@@ -1,0 +1,52 @@
+.searchpage {
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(41, 41, 41);
+}
+.mainSearchBar {
+  width: 340px;
+  border-radius: 30px;
+  padding: 10px;
+  padding-left: 20px;
+  outline: none;
+  border: 2px solid gray;
+  background-color: transparent;
+  color: white;
+  font-size: 20px;
+  font-family: "Raleway", sans-serif;
+}
+.mainSearchBtn {
+  width: 100px;
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.searchLogo {
+  font-size: 50px;
+  color: rgb(255, 20, 20);
+  padding-top: 2px;
+  padding-right: 5px;
+}
+.searchLogoText {
+  font-size: 25px;
+  letter-spacing: 0px;
+  font-family: "Raleway", sans-serif;
+  margin-left: 10px;
+  color: white;
+}
+.searchBanner {
+  margin-bottom: 20px;
+}
+.searchInstruction {
+  font-size: 18px;
+  letter-spacing: 0px;
+  font-family: "Raleway", sans-serif;
+  color: rgb(186, 186, 186);
+  margin-bottom: 20px;
+}
