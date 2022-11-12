@@ -12,19 +12,24 @@ function SearchPage() {
     let url = e.target[0].value;
     let videoId = url.split("/watch?v=")[1];
     if (videoId) {
-      console.log("fiouabw");
       navigate(`/video/${videoId}`);
     } else {
-      toast.error("Invalid URL!", {
-        position: "top-right",
-        autoClose: 4000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "dark",
-      });
+      let videoId = url.split("youtu.be/")[1];
+      if (videoId) {
+        navigate(`/video/${videoId}`);
+      }
+      else{
+        toast.error("Invalid URL!", {
+          position: "top-right",
+          autoClose: 4000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "dark",
+        });
+      }
     }
   };
   return (
