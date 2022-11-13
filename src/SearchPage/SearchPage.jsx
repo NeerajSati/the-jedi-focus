@@ -12,6 +12,7 @@ function SearchPage() {
     let url = e.target[0].value;
     let videoId = url.split("/watch?v=")[1];
     if (videoId) {
+      videoId = videoId.split('&')[0]
       navigate(`/video/${videoId}`);
     } else {
       let videoId = url.split("youtu.be/")[1];
